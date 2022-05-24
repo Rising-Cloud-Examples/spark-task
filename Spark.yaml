@@ -1,0 +1,8 @@
+deps: 
+- apt update && apt upgrade -y
+- apt install openjdk-11-jdk -y
+- export JAVA_HOME=/usr/lib/jvm/openjdk-11-jdk-amd64
+- apt install -y python3-pip
+- pip3 install pyspark
+daemons: []
+run: python3 my_script.py
